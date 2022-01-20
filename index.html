@@ -11,6 +11,7 @@
     <title>Ra'ad Mahmoud</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--[if lte IE 8]>
     <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="assets/css/main.css"/>
@@ -23,6 +24,15 @@
             MathJax.Hub.Config({
                                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
                                });
+
+
+
+
+
+
+
+
+
 
     </script>
     <script type="text/javascript"
@@ -133,88 +143,6 @@
                     control and algorithm containerisation/deployment on my projects.
                     Outside of these projects, I have also made it my goal to gently cultivate an understanding of deep
                     learning concepts and capabilities in my team, and the company as a whole.</p>
-            </div>
-        </section>
-        <section class="spotlight">
-            <div class="image"><img src="images/DSC_5118.jpg" alt="JAXA view"/></div>
-            <div class="content">
-                <h2>JAXA, Sagamihara</h2>
-                <p>During the first year of my PhD, I had the opportunity to travel to and work at the Japan Aerospace
-                    Exploration Agency site
-                    in Sagamihara, Tokyo, for 3 months. In this time, I built friendships and connections with local
-                    researchers which survive to this day.
-                    In this invigorating research environment, I also made the first steps toward the ground-breaking
-                    unified spectral-timing model which would form the basis of my thesis
-                    2 years later (see <a href=https://etheses.dur.ac.uk/13578/>here</a>).</p>
-            </div>
-        </section>
-        <section class="spotlight">
-            <div class="image"><img src="images/DSC_5118.jpg" alt="JAXA view"/></div>
-            <div class="content">
-                <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-body">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                                </button>
-                                <div class="section-padding">
-                                    <h3>Thank you!</h3>
-                                    <p>We are glad to see you join us on our big day.</p>
-                                    <div id="add-to-cal"></div>
-                                </div>
-                            </div>
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-                <div class="col-md-6 col-md-offset-3">
-                    <h3>What are you waiting for?</h3>
-                    <p>We would greatly appreciate if you could RSVP before 1st of November '17</p>
-                    <form id="rsvp-form" class="rsvp-form"
-                          action=""
-                          method="POST">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-input-group">
-                                    <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                         placeholder="Your email"
-                                                                         required>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-input-group">
-                                    <i class="fa fa-user"></i><input name="name" class=""
-                                                                     placeholder="Your name"
-                                                                     required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-input-group">
-                                    <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                      max="4"
-                                                                      placeholder="Husband/Wife or kids"
-                                                                      required>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="form-input-group">
-                                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                    class="" min="0"
-                                                                    placeholder="Invite code"
-                                                                    required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12" id="alert-wrapper"></div>
-                        </div>
-                        <button class="btn-fill rsvp-btn">
-                            Yes,
-                            that's me!
-                        </button>
-                    </form>
-                </div>
             </div>
         </section>
 
@@ -356,15 +284,79 @@
 
     <!-- CTA -->
     <section id="cta" class="wrapper style4">
-        <div class="inner">
-            <header>
-                <h2>Contact me</h2>
-                <p>Feel free to contact me via email or follow me on social media using the links below. </p>
-            </header>
-            <ul class="actions vertical">
-                <li><a href="mailto:raad.mahmoud@kromek.com" class="button fit special">Email</a></li>
-                <!-- <li><a href="#" class="button fit">Learn More</a></li> -->
-            </ul>
+        <div class="content">
+            <div class="rsvp text-center">
+                <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                                </button>
+                                <div class="section-padding">
+                                    <h3>Thank you!</h3>
+                                    <p>We are glad to see you join us on our big day.</p>
+                                    <div id="add-to-cal"></div>
+                                </div>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <h3>What are you waiting for?</h3>
+                            <p>We would greatly appreciate if you could RSVP before 1st of November '17</p>
+                            <form id="rsvp-form" class="rsvp-form"
+                                  action=""
+                                  method="POST">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-input-group">
+                                            <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                                 placeholder="Your email"
+                                                                                 required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-input-group">
+                                            <i class="fa fa-user"></i><input name="name" class=""
+                                                                             placeholder="Your name"
+                                                                             required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-input-group">
+                                            <i class="fa fa-users"></i><input type="number" name="extras" class=""
+                                                                              min="0"
+                                                                              max="4"
+                                                                              placeholder="Husband/Wife or kids"
+                                                                              required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-input-group">
+                                            <i class="fa fa-key"></i><input type="number" name="invite_code"
+                                                                            id="invite_code"
+                                                                            class="" min="0"
+                                                                            placeholder="Invite code"
+                                                                            required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12" id="alert-wrapper"></div>
+                                </div>
+                                <button class="btn-fill rsvp-btn">
+                                    Yes,
+                                    that's me!
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -385,6 +377,7 @@
 </div>
 
 <!-- Scripts -->
+<script src="js/vendor/bootstrap.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.scrollex.min.js"></script>
 <script src="assets/js/jquery.scrolly.min.js"></script>
