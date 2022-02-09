@@ -8,7 +8,7 @@
 <head>
     <link rel="icon"
           href="https://www.maxpixel.net/static/photo/1x/Design-Round-Circle-Logo-Splash-Element-Red-1618916.png">
-    <title>Ra'ad Mahmoud</title>
+    <title>The Best Wedding Ever...?</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,15 +24,6 @@
             MathJax.Hub.Config({
                                tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
                                });
-
-
-
-
-
-
-
-
-
 
     </script>
     <script type="text/javascript"
@@ -65,7 +56,7 @@
 
     <!-- Header -->
     <header id="header" class="alt">
-        <h1><a href="index.html">Ra'ad Mahmoud</a></h1>
+        <h1><a href="index.html">Rydia and La'ad's Wedding</a></h1>
         <nav id="nav">
             <ul>
                 <li class="special">
@@ -73,16 +64,13 @@
                     <div id="menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#whoami">Who am I</a></li>
+                            <li><a href="#welcome">Welcome</a></li>
                             <!-- <li><a href="#skills">Skills</a></li> -->
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#cta">Get in touch</a></li>
+                            <li><a href="#info">Info</a></li>
+                            <li><a href="#cta">RSVP</a></li>
                             <li>&mdash;</li>
-                            <li><a href="https://www.researchgate.net/profile/Raad-Mahmoud">Publications</a></li>
-                            <li><a href="./RaadMahmoudCV.pdf">Curriculum Vitae</a></li>
-                            <li><a href="https://github.com/raadmahmoudkromek">GitHub</a></li>
-                            <!-- <li><a href="#">Sign Up</a></li> -->
-                            <!-- <li><a href="#">Log In</a></li> -->
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">IMPORTANT:
+                                Please Read</a></li>
                         </ul>
                     </div>
                 </li>
@@ -93,33 +81,40 @@
     <!-- Banner -->
     <section id="banner">
         <div class="inner">
-            <h2>Ra'ad Mahmoud</h2>
+            <h2>The Big Hitch</h2>
             <p>
-                Machine Learning Engineer<br>
-                Astrophysicist<br>
+                "We were married for better or worse. I couldn't have done better, and she couldn't have done worse."<br>
+                -- Henry Youngman<br>
 
             </p>
             <!-- <ul class="actions">
                 <li><a href="#" class="button special">Activate</a></li>
             </ul> -->
         </div>
-        <a href="#whoami" class="more scrolly">Learn More</a>
+        <a href="#welcome" class="more scrolly">Learn More</a>
     </section>
 
     <!-- One -->
-    <section id="whoami" class="wrapper style1 special">
+    <section id="welcome" class="wrapper style1 special">
         <div class="inner">
             <header class="major">
-                <h2>Who am I<br/>
+                <h2>Welcome beloveds<br/>
                 </h2>
                 <p>
-                    Hi! I'm Ra'ad. I am a Machine Learning engineer at Kromek, and a recovering computational
-                    astrophysicist.
+                    We're mega excited to have you with us on our socially-mandated day of union!
+                </p>
+                <p>
+                    Hopefully on this site you'll find everything you need to get to our wedding, obtain food and
+                    shelter while you're there,
+                    and have a good time (in that order).
+                </p>
+                <p>
+                    If there's anything missing or broken, it's Ra'ad's fault, it's just
+                    easier that way.
                 </p>
             </header>
-            <a href="./RaadMahmoudCV.pdf" class="button style2"><b>CV</b></a>
-            <a href="https://github.com/raadmahmoudkromek" class="button style2"><b>GitHub</b></a>
-            <a href="https://www.linkedin.com/in/ra-ad-mahmoud-0189bb104/" class="button style2"><b>LinkedIn</b></a>
+            <a href="https://www.google.com/maps/place/Wrenbury+Hall/@53.0336761,-2.5977792,15z/data=!4m5!3m4!1s0x0:0x57ccb2ab894e1b06!8m2!3d53.0336761!4d-2.5977792"
+               class="button style2"><b>The Venue</b></a>
             <footer>
                 <a href="#experience" class="button style2 down more scrolly"></a>
             </footer>
@@ -127,22 +122,31 @@
     </section>
 
 
-    <!-- Experience -->
-    <section id="experience" class="wrapper alt style2">
+    <!-- Info -->
+    <section id="info" class="wrapper alt style2">
         <section class="spotlight">
             <div class="image"><img src="images/Kromek_logo.jpg" alt="Kromek"/></div>
             <div class="content">
                 <h2><a href="https://www.kromek.com/">Kromek</a></h2>
-                <p> One week after handing in my PhD thesis, I started as a Computer Vision engineer at Kromek, in April
-                    of 2020.
-                    In this role, I have developed unique data pipelines and neural networks to tackle challenges
-                    ranging from
-                    combating explosive threats in aviation security to identifying novel pathogens from metagenomic air
-                    samples.
-                    Being the only dedicated ML engineer at Kromek, I also took over the technical leadership of data
-                    control and algorithm containerisation/deployment on my projects.
-                    Outside of these projects, I have also made it my goal to gently cultivate an understanding of deep
-                    learning concepts and capabilities in my team, and the company as a whole.</p>
+                <body>
+
+                <h1>Da venue</h1>
+
+                <div id="googleMap" style="width:100%;height:400px;"></div>
+
+                <script>
+                    function myMap() {
+                        var mapProp = {
+                            center: new google.maps.LatLng(53.033665, -2.597778),
+                            zoom: 18,
+                        };
+                        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    }
+                </script>
+
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARR50o03P68iVg4-goDKgMp3ZXoVE9LDo&callback=myMap"></script>
+
+                </body>
             </div>
         </section>
 
@@ -168,120 +172,6 @@
     </section>
 
 
-    <!--					&lt;!&ndash; Upcoming Dates &ndash;&gt;-->
-    <!--					<section id="dates" class="main style3 primary">-->
-    <!--						&lt;!&ndash; <div class="content container"> &ndash;&gt;-->
-    <!--			            <header>-->
-    <!--			            	<h2>-->
-    <!--			                	Upcoming Dates-->
-    <!--			                </h2>-->
-    <!--			            </header>-->
-
-    <!--			            <li class="date">-->
-    <!--		                    <h3>Dec 5 - 12</h3>-->
-    <!--		                    <p>Vancouver, BC, Canada</p>-->
-    <!--		                </li>-->
-    <!--		                <li class= "events">-->
-    <!--		                    <ul class="events-detail">-->
-    <!--		                        <li>-->
-    <!--		                            &lt;!&ndash; <a href=""> &ndash;&gt;-->
-    <!--		                                <span class="event-time">all day - </span>-->
-    <!--		                                <span class="event-name">NeurIPS</span>-->
-    <!--		                                <br />-->
-    <!--		                                <span class="event-location">Remote</span>-->
-    <!--		                            &lt;!&ndash; </a> &ndash;&gt;-->
-    <!--		                        </li>-->
-    <!--		                    </ul>   -->
-    <!--		                </li>-->
-    <!--			                 -->
-    <!--				        &lt;!&ndash; </div> &ndash;&gt;-->
-    <!--					</section>-->
-
-    <!-- Skills -->
-    <!-- <section id="skills" class="main style3 primary">
-        <div class="content container">
-        <header>
-            <h2>
-                <i class="fa fa-cog fa-spin"></i><br />
-                my skills
-            </h2>
-            <p>
-        </header>
-        <div class="row">
-
-            <div class="4u">
-
-                <section>
-                    <font size="20"><span style="color:#E60082" class="icon feature fa-laptop"></span></font>
-                    <header>
-                        <h3>Computing</h3>
-                    </header>
-                    <font size="2">
-                        <p style="font-family: 'Source Sans Pro', sans-serif">
-                            I teach machines using: PyTorch,<br />
-                            Keras, and TensorFlow.<br />
-                            I write in: <i class="icon-python"></i>, <i class="icon-cplusplus"></i>, <i class="icon-c"></i>, $\LaTeX$, and <i class="icon-html"></i>.<br />
-                            <!- - I sometimes program in: <i class="icon-cplusplus"></i>, <i class="icon-c"></i>,<br />
-                             Matlab, LabView, R, ROOT.<br /> - ->
-                            I have experience using: <i class="fa fa-apple"></i> and <i class="fa fa-linux"></i>.<br /> <!- - , <i class=" fa fa-windows"></i> - ->
-                            I take pride in writing good tests and docs.
-
-                        </p>
-                    </font>
-                </section>
-
-            </div>
-            <div class="4u">
-
-                <section>
-                    <font size="20"><span style="color:#E60082" class="icon feature fa-bar-chart"></span></font>
-                    <header>
-                        <h3>Math</h3>
-                    </header>
-                    <font size="2">
-                        <p style="font-family: 'Source Sans Pro', sans-serif">
-                            Thorough knowledge of Group Theory, Field Theory,<br />
-                            Linear Algebra, Complex Analysis, <br />
-                            Statistics, and Data Analysis <br />
-                            from academic coursework and <br />research experience.
-                    </p>
-                </font>
-                </section>
-
-            </div>
-            <div class="4u">
-
-                <section>
-                    <font size="20"><span style="color:#E60082" class="icon feature fa-group"></span></font>
-                    <header>
-                        <h3>People Skills</h3>
-                    </header>
-                    <font size="2">
-                    <p style="font-family: 'Source Sans Pro', sans-serif">
-                    Management, Event and Conference Planning, <br />
-                    Effective Communication, Active Listening,<br />
-                    Mentoring, Onboarding, Leadership,<br />
-                    Resilience, and Advocacy. <br />
-                    </p>
-                </font>
-                </section>
-
-            </div>
-        </div>
-        </br>
-
-        <p>Would you like to know more about my skills and experience?</p>
-        <!- - <ul class="buttons"> - ->
-            <!- - <a href="./resume.pdf" class="button style3"><b>Resume</b></a> - ->
-            <a href="./MichelaPaganiniCV.pdf" class="button style3"><b>CV</b></a>
-            <a href="./pub.html" class="button style3"><b>Publications</b></a>
-            <a href="./sciencecomms.html" class="button style3"><b>Public Speaking</b></a>
-        <!- - </ul> - ->
-        </div>
-        <!- - <a href="#work" class="button style4 down anchored"></a> - ->
-    </section> -->
-
-
     <!-- CTA -->
     <section id="cta" class="wrapper style4">
         <div class="content">
@@ -304,8 +194,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
-                            <h3>What are you waiting for?</h3>
-                            <p>We would greatly appreciate if you could RSVP before 1st of November '17</p>
+                            <h3>RSVP Time</h3>
+                            <p>If you hate this form, just text one of us...</p>
                             <form id="rsvp-form" class="rsvp-form"
                                   action=""
                                   method="POST">
@@ -328,19 +218,16 @@
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-input-group">
-                                            <i class="fa fa-users"></i><input type="number" name="extras" class=""
-                                                                              min="0"
-                                                                              max="4"
-                                                                              placeholder="Husband/Wife or kids"
+                                            <i class="fa fa-users"></i><input type="name" name="extras" class=""
+                                                                              placeholder="Dietary things"
                                                                               required>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6">
                                         <div class="form-input-group">
-                                            <i class="fa fa-key"></i><input type="number" name="invite_code"
-                                                                            id="invite_code"
-                                                                            class="" min="0"
-                                                                            placeholder="Invite code"
+                                            <i class="fa fa-key"></i><input type="name" name="additional notes"
+                                                                            class=""
+                                                                            placeholder="Anything else?"
                                                                             required>
                                         </div>
                                     </div>
@@ -364,13 +251,11 @@
     <!-- Footer -->
     <footer id="footer">
         <ul class="icons">
-            <li><a href="https://www.linkedin.com/in/ra-ad-mahmoud-0189bb104" class="icon fa-linkedin"><span
-                    class="label">LinkedIn</span></a></li>
             <li><a href="https://github.com/raadmahmoudkromek" class="icon fa-github"><span class="label">Github></span></a>
             </li>
         </ul>
         <ul class="copyright">
-            <li>&copy; Ra'ad Mahmoud</li>
+            <li>&copy; Dr Ra'ad Mahmoud 2022</li>
         </ul>
     </footer>
 
